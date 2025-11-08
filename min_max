@@ -1,0 +1,9 @@
+function(list){
+  let minimum = Math.min(...list)
+  return minimum
+}
+
+var max = function(list){
+  let maximum = Math.max(...list)
+  return maximum
+}
