@@ -1,0 +1,6 @@
+function solution(str){
+  let arr = []
+  arr = str.split("").reverse().join("")
+  let string = arr.toString()
+  return string
+}
