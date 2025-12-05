@@ -1,0 +1,4 @@
+function DNAtoRNA(dna) {
+    let result = dna.replaceAll("T","U")
+    return(result)
+}
