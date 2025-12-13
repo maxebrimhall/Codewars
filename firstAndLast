@@ -1,0 +1,8 @@
+function removeChar(str){
+  let seperate = str.split("")
+    if(seperate.indexOf(0)){
+      console.log(seperate.shift())
+    }
+      seperate.pop()
+  return seperate.join("")
+};
