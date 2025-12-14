@@ -1,0 +1,17 @@
+var humanYearsCatYearsDogYears = function(humanYears) {
+  let catYears = 1
+  let dogYears = 1
+  if(humanYears >= 3){
+    catYears *= 15 + 9 + 4 * (humanYears - 2)
+    dogYears *= 15 + 9 + 5 * (humanYears - 2)
+    return [humanYears, catYears, dogYears]
+  }else if(humanYears === 2){
+    catYears *= 15 + 9
+    dogYears *= 15 + 9
+    return [humanYears, catYears, dogYears]
+  }else{
+    catYears *= 15
+    dogYears *= 15
+    return [humanYears, catYears, dogYears]
+  }
+}
