@@ -1,0 +1,15 @@
+function removeSmallest(numbers) {
+  let arr = []
+  let result = Math.min(...numbers)
+  console.log(result)
+  if(result.length > 2){
+  }
+  for(let i = 0; i < numbers.length; i++){
+    if(numbers[i] !== result){
+      arr.push(numbers[i])
+    }else{
+      console.log(numbers.indexOf())
+    }
+  }
+  return arr;
+}
