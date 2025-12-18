@@ -1,0 +1,13 @@
+function countSheeps(sheep) {
+  let counter = 0
+  if(sheep == " " || sheep == null || sheep == undefined){
+      return 0
+    }else{
+      for(let i = 0; i < sheep.length; i++){
+        if(sheep[i] == true){
+          counter += 1
+      }
+    }
+      return counter
+  }
+}
