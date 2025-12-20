@@ -1,0 +1,14 @@
+function isPalindrome(x) {
+  let upper = x.toUpperCase()
+  let arr = []
+  for(let i = 0; i < upper.length; i++){
+    arr.push(upper[i])
+  }
+  let inverted = arr.reverse()
+  let stringify = arr.join("").toString().toUpperCase()
+  if(upper === stringify){
+    return true
+  }else{
+   return false 
+  }
+}
