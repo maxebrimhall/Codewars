@@ -1,0 +1,31 @@
+var uniqueInOrder=function(iterable){
+  if(typeof iterable == "string"){
+    if(iterable == null || iterable == [] || iterable == undefined){
+      return []
+      }
+        let split = iterable.split("")
+        let stringArr = [iterable[0]]
+        let stringCounter = iterable[0]
+        for(let i = 0; i < iterable.length; i++){
+          if(iterable[i] != stringCounter){
+            stringCounter = iterable[i]
+            stringArr.push(iterable[i])
+          }
+        }
+    return stringArr
+  }else{
+    if(iterable == null || iterable == [] || iterable == undefined){
+      return []
+    }else{
+      let numberCounter = iterable[0]
+      let numberArr = [iterable[0]]
+      for(let i = 0; i < iterable.length; i++){
+        if(iterable[i] != numberCounter){
+          numberCounter = iterable[i]
+          numberArr.push(iterable[i])
+        }
+      }
+      return numberArr
+    }
+  }
+}

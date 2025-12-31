@@ -1,0 +1,12 @@
+function findShort(s){
+  let words = s.split(" ")
+  let shortest = words[0]
+  for(let i = 0; i < words.length; i++){
+    if(shortest.length > words[i].length){
+      shortest = words[i]
+    }
+  }
+  let individual = shortest.split("")
+  shortest = individual.length
+  return shortest
+}
