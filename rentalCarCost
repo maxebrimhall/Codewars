@@ -1,0 +1,10 @@
+function rentalCarCost(d) {
+  let mult = d * 40
+  if(d >= 7){
+    return mult - 50
+  }else if(d >= 3){
+    return mult - 20
+  }else{
+    return mult
+  }
+}
