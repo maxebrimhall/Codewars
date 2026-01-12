@@ -1,0 +1,8 @@
+function digitize(n) {
+  let string = n.toString()
+  let arr = []
+  for(let i = 0; i < string.length; i++){
+    arr.push(Number(string[i]))
+  }
+  return arr.reverse()
+}
