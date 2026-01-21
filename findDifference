@@ -1,0 +1,11 @@
+function findDifference(a, b) {
+  let aSum = 1
+  let bSum = 1
+  for( let i = 0; i < a.length;i++){
+    aSum *= a[i]
+  }
+  for( let i = 0; i < b.length;i++){
+    bSum *= b[i]
+  }
+  return Math.abs(aSum - bSum)
+}
