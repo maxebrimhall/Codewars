@@ -1,0 +1,10 @@
+function betterThanAverage(classPoints, yourPoints) {
+  let highClassPoints = Math.max(...classPoints)
+  let lowClassPoints = Math.min(...classPoints)
+  let averageClass = (highClassPoints + lowClassPoints) / 2
+  if(yourPoints > averageClass){
+    return true
+  }else{
+    return false
+  }
+}
