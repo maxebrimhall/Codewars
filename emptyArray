@@ -1,0 +1,8 @@
+function findAverage(array) {
+  let isNan = (array.reduce((a,b) => a + b, 0)) / array.length 
+  if(array.length === 0){
+    return 0
+  }else{
+    return isNan
+  }
+}
